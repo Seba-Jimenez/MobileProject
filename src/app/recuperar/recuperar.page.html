@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar class="background-color-darkblue">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Recuperar contraseña </ion-title>
+  </ion-toolbar>
+  <ion-toolbar class="background-color-darkblue"> 
+    <ion-title size="small">Se le dispondra de un codigo para validar su cuenta </ion-title>    
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="background-color-dark">
+  <form>
+    <ion-row>
+      <ion-col>
+        <ion-item lines="full">
+          <ion-input placeholder="Escriba su usuario" required></ion-input>
+
+        </ion-item> 
+        <ion-button fill="outline" type="submit" routerLink="/valrecuperar" shape="round" expand="block">Siguiente</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="background-color-dark">
+    <ion-row>
+      <ion-col>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1200px-Logo_DuocUC.svg.png" alt="Logo_DuocUC">
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+ 

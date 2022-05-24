@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar class="background-color-darkblue">
+    <ion-buttons slot="start">
+      <ion-back-button class="white" defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="white" slot="end" size="small">¡Bienvenido!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-color-gray" [fullscreen]="true">
+  <ion-headear collapse="condense">
+    <ion-toolbar class="background-color-yellow">
+      <ion-title class="white" size="large">RegistrAAP</ion-title>
+    </ion-toolbar>    
+  </ion-headear>
+
+  <ion-card class="background-color-dark"> 
+    <ion-card-header>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1200px-Logo_DuocUC.svg.png" alt="Logo_DuocUC">
+      <ion-card-title class="white" size="small">Bienvenido a RegistrAAP</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="forget">
+      Para registrar las asistencias de su clase o generar un codigo como profesor
+       para sus alumnos, es muy sencillo, 
+       solo debes entrar en la app y iniciar sesion con tú usuario DuocUC.
+      <ion-button routerLink="/bienvenido" expand="block" fill="outline" class="button-color-activated-darkblue">Entrar al perfil</ion-button>
+      <ion-button routerLink="/proyectos" expand="block" fill="outline" class="button-color-activated-darkblue">Ver proyectos</ion-button>
+    </ion-card-content>
+    
+  </ion-card>  
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar class="background-color-gray">
+    <ion-button href="/salir" shape="round" size="small" expand="full" color="danger">Salir</ion-button>
+  </ion-toolbar>
+</ion-footer>

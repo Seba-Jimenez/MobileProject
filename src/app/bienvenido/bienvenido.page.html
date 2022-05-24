@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="background-color-darkblue">
+    <ion-buttons slot="start">
+      <ion-back-button class="white" defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+      <ion-title class="white" size="small">¡Bienvenido @USUARIO!</ion-title> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-color-gray" fullscreen="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeMd="4" offsetMd="4">
+        <ion-toolbar class="background-color-dark">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1200px-Logo_DuocUC.svg.png" alt="Logo_DuocUC">    
+        </ion-toolbar>
+    
+      <ion-card class="background-color-dark">
+        <ion-card-header>
+          <ion-avatar>
+            <img src="https://www.geekmi.news/__export/1622910844895/sites/debate/img/2021/06/05/juan-carlos-bodoque-31-minutos-1.jpg_1443218755.jpg">
+          </ion-avatar>     
+          <ion-card-subtitle class="white">&nbsp;&nbsp;Bienvenido de nuevo @usuario</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-card-title color="ligth" class="ion-text-center">Su codigo QR </ion-card-title>
+          <img src="assets/img/frame.png" />
+        </ion-card-content>    
+      </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>  
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="background-color-yellow">    
+    <ion-grid>
+      <ion-row>
+        <ion-col sizeMd="4" offsetMd="4">
+          <ion-button size="small" color="tertiary" expand="block" ><ion-icon name="camera-outline"></ion-icon>&nbsp;&nbsp;Escanear código</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

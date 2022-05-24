@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Rick y Morty</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/proyectos"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeMd="4" offsetMd="4">
+        <ion-list>
+          <ion-item *ngFor="let c of characters" [routerLink]="['/personajes/' + c.id]">
+            <ion-avatar slot="start">
+              <img src="{{c.image}}" alt="">
+            </ion-avatar>
+            <ion-label>{{c.name}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

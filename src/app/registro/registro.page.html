@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar class="background-color-darkblue">
+    <ion-buttons>
+      <ion-back-button class="white" defaultHref="/login"></ion-back-button>
+      <ion-title class="white">Registro usuario </ion-title>
+    </ion-buttons>
+    <img src="/assets/img/campus.png" alt="Campus DuocUC">  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-color-gray">
+  <form [formGroup]="formRegistro" (ngSubmit)="validarRegistro()">
+    <ion-item>
+      <ion-input placeholder="Ingrese su nombre" type="text" formControlName="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Ingrese su email" type="email" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Ingrese su contraseña"  type="password" formControlName="pass"></ion-input>
+    </ion-item>
+    <div *ngIf="mensaje">
+      {{mensaje}}
+      <span *ngIf="formRegistro.controls['nombre'].errors.maxlength">El nombre debe tener al menos 10 caracteres</span>
+    </div>
+    <br>
+    <div>      
+      <ion-button color="success" expand="block" type="ngSubmit" [disabled]="formRegistro.invalid">Registrar</ion-button>
+    </div>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="background-color-yellow">
+</ion-toolbar>
